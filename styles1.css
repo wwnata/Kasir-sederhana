@@ -1,0 +1,21 @@
+/* Mencegah efek highlight biru dan scroll membal di HP */
+body {
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+    user-select: none;
+}
+
+/* Menyembunyikan panah pada input angka bawaan browser (untuk fallback) */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Anda bisa menambahkan custom styling khusus di sini 
+  yang mungkin sulit dicapai dengan utility class Tailwind.
+*/
+
